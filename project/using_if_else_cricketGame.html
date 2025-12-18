@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>using if else in cricket game</title>
+    <style>
+        body{ text-align: center;}
+    </style>
+</head>
+<body>
+    <h1>cricket game</h1>
+        
+    <button onclick="
+        let computerChoice;
+        let number=Math.random()*3;
+        if(number<1){
+            computerChoice= 'bat';
+        }
+        else if(number>1&&number<2){
+            computerChoice= 'ball';
+        }
+        else{
+            computerChoice= 'stump';
+        }
+        let result;
+        if(computerChoice=='bat'){
+            result='tie';
+        }
+        else if (computerChoice=='ball'){
+            result='user win';
+        }
+        else{result='user lose'}
+
+        alert(`computerChoice is ${computerChoice}  final result ${result} `)
+
+        ">bat</button>
+
+        <button onclick="
+        let computerChoice;
+        let number=Math.random()*3;
+        if(number<1){
+            computerChoice= 'bat';
+        }
+        else if(number>1&&number<2){
+            computerChoice= 'ball';
+        }
+        else{
+            computerChoice= 'stump';
+        }
+        let result;
+        if(computerChoice=='bat'){
+            result='user lose';
+        }
+        else if (computerChoice=='ball'){
+            result='tie';
+        }
+        else{result='user win'}
+
+        alert(`computerChoice is ${computerChoice}  final result ${result} `)
+
+        ">ball</button>
+
+        <button onclick="
+        let computerChoice;
+        let number=Math.random()*3;
+        if(number<1){
+            computerChoice= 'bat';
+        }
+        else if(number>1&&number<2){
+            computerChoice= 'ball';
+        }
+        else{
+            computerChoice= 'stump';
+        }
+        let result;
+        if(computerChoice=='bat'){
+            result='user win';
+        }
+        else if (computerChoice=='ball'){
+            result='user lose';
+        }
+        else{result='stump'}
+        alert(`computerChoice is ${computerChoice}  final result ${result} `)
+
+        ">stump</button>
+    
+    
+    
+</body>
+</html>
