@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <script>
+    let div=document.createElement('div');
+        console.log(div);
+        div.className='main';
+        div.id='divName';
+        div.setAttribute('title','generate title');
+        div.style.backgroundColor='red'
+        div.style.padding='20px'
+       
+        //  div.innerText='about DOM'   //over write
+        
+        let addText=document.createTextNode('about DOM');
+        div.appendChild(addText);
+
+        document.body.appendChild(addText)
+
+        
+
+    </script>    
+</body>
+</html>
