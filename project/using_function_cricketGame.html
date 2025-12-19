@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function in cricket game</title>
+</head>
+<body>
+    <h1> function use in cricket game</h1>
+
+    <button onclick="
+    let computerchoice=generateComputerChoice();
+    let result=finalresult('bat',computerchoice);
+    ShowResult('bat',computerchoice,result)">bat</button>
+
+     <button onclick="
+    computerchoice=generateComputerChoice();
+    result=finalresult('ball',computerchoice);
+    ShowResult('ball',computerchoice,result)">ball</button>
+
+     <button onclick="
+     computerchoice=generateComputerChoice();
+    result=finalresult('stump',computerchoice);
+    ShowResult('stump',computerchoice,result)">stump</button>
+    <script>
+        function generateComputerChoice(){
+            let computerchoice=Math.random()*3;
+            if(computerchoice<1){
+                return 'bat';
+            }
+            else if(computerchoice>=1&&computerchoice<2){
+                return 'ball';
+            }
+            else{return 'stump';}
+        }
+
+        function finalresult(userMove,computerMove){
+            if(userMove==computerMove){
+                return 'tei';
+            }
+            else if(userMove=='bat'){
+                if(computerMove=='ball'){
+                    return 'win';
+                }
+                else if(computerMove=='stump'){
+                    return 'lose';
+                }
+            }
+            else if(userMove=='ball'){
+                if(computerMove=='bat'){
+                    return 'lose';
+                }
+                else if(computerMove=='stump'){
+                    return 'win';}}
+            else if(userMove=='stump'){
+                if(computerMove=='bat')
+            {return 'win';}
+            else if(computerMove=='ball'){
+                return 'lose';
+            } }}
+           
+            function ShowResult(userMove,computerMove,result){
+                alert(`computer choice ${computerMove} & user choice ${userMove} & Final result is ${result}`)
+            }
+    </script>
+    
+</body>
+</html>
