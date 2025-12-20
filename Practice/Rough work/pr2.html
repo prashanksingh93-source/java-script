@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOm 2 practice </title>
+</head>
+<body>
+    <script>
+        let div=document.createElement('div');
+        console.log(div);
+        div.className='class';
+        div.id='this_id';
+        div.setAttribute=('title:','this is title');
+        div.style.backgroundColor='red';
+        div.style.padding='20px';
+
+
+      //  div.innerText='text content';   //this is over write
+       
+        let addText=document.createTextNode('text content by createTextNode');
+        div.appendChild(addText);
+        document.body.appendChild(addText);
+
+    </script>
+    
+</body>
+</html>
