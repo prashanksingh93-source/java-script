@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM selector and add li</title>
+</head>
+<body>
+    <ul id="parent">
+        <li>annnu</li>
+        <li>kanu</li>
+    </ul>
+    <script>
+        
+       function addlang(language){ const create=document.createElement('li');
+        create.innerHTML=`${language}`;
+        document.querySelector('#parent').appendChild(create)
+       }
+       addlang('dhoom');
+
+       function add2nd(language){
+        const create=document.createElement('li');
+        create.appendChild(document.createTextNode(language));
+        document.querySelector('#parent').appendChild(create)
+       }
+       add2nd('tu hain kahan')
+
+       //edite replace
+       let secondLang=document.querySelector('li:nth-child(2)')
+       console.log(secondLang)
+       const newtext=document.createElement('li');
+       newtext.textContent='aplu';
+       secondLang.replaceWith(newtext)
+
+       let thrdLang=document.querySelector('li:nth-child(3)')
+       console.log(thrdLang)
+       const newtext3=document.createElement('li');
+       newtext3.appendChild(document.createTextNode('singGhamm'));
+       thrdLang.replaceWith(newtext3)
+
+       //edite
+       let replc=document.querySelector('li:first-child')
+        replc.outerHTML='<li>tere ishq m</li>'
+
+        //remove
+        let lstelmt=document.querySelector('li:last-child');
+        lstelmt.remove()
+
+
+    </script>
+    
+</body>
+</html>
