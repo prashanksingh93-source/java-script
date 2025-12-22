@@ -14,6 +14,9 @@
 <script>
     function addLanguage(langName){
         const li = document.createElement('li');
+
+
+
         li.innerHTML = `${langName}`
         document.querySelector('.language').appendChild(li)
     }
@@ -27,6 +30,8 @@
     }
     addOptiLanguage('golang')
 
+
+    
     //Edit
     const secondLang = document.querySelector("li:nth-child(2)")
     console.log(secondLang);
