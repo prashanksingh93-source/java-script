@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sync/await</title>
+</head>
+<body>
+    <script>
+        function delay(msg, time) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      console.log(msg);
+      resolve();
+    }, time);
+  });
+}
+
+async function runTasks() {
+  await delay("Task 1", 1000);
+  await delay("Task 2", 1000);
+  await delay("Task 3", 1000);
+  await delay("Task 4", 1000);
+}
+
+runTasks();
+
+    </script>
+</body>
+</html>
