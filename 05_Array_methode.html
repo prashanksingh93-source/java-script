@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methode</title>
+</head>
+<body>
+    <script>
+        let Annu=[1,2,3,4,5,6]
+        Annu.push(7);     //add item at the end
+        Annu.unshift(0);   //add item at the begnning
+        console.log(Annu)
+        Annu.shift()       //remove the 1st item of array
+        Annu.pop()         //remove last item of array
+        console.log(Annu)
+
+        //loop for array
+        for(let i=0;i<Annu.length;i++){
+            console.log(Annu[i]);
+        }
+        //for of loop 
+        for(let key of Annu){
+            console.log(key)
+        }
+
+        //map 
+        let Nunu=Annu.map((e)=>e+2);
+        console.log(Nunu)
+
+        //filter
+        let kuku=Annu.filter((e)=>{return e>3})
+        console.log(kuku)
+
+    </script>
+</body>
+</html>
