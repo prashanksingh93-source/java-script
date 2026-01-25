@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>string methode</title>
+</head>
+<body>
+    <script>
+     
+     //length
+     let text = "JavaScript";
+     console.log(text.length); // 10.  
+    
+     //toUppperCase and toLowerCase
+     let name = "Annu";
+     console.log(name.toUpperCase()); // "ANNU"
+     console.log(name.toLowerCase()); // "annu"
+
+
+     //trim
+     let input = "   Hello World   ";
+     console.log(input.trim()); // "Hello World"
+
+
+     //includes
+     let msg = "Learn JavaScript";
+     console.log(msg.includes("Java")); // true
+     console.log(msg.includes("Python")); // false
+
+    //indexOf and lastIndexOf
+    let str = "banana";
+    console.log(str.indexOf("a")); // 1
+    console.log(str.lastIndexOf("a")); // 5
+
+
+    //startWith and endWith
+    let title = "Frontend Developer";
+    console.log(title.startsWith("Front")); // true
+    console.log(title.endsWith("Dev")); // false
+
+    //slice(start,end)
+    let word = "JavaScript";
+    console.log(word.slice(0, 4)); // "Java"
+    console.log(word.slice(4));    // "Script"
+
+
+    //subString(start,end)
+    let string= "Coding";
+    console.log(string.substring(0, 3)); // "Cod"
+
+
+    //replace(old,new)
+    let msge = "I love Python";
+    console.log(msge.replace("Python", "JavaScript")); // "I love JavaScript"
+
+    //Note: Only the first match is replaced. To replace all, use a regular expression with /g.
+    let mseg = "apple apple apple";
+    console.log(mseg.replace(/apple/g, "banana")); // "banana banana banana"
+
+
+
+    //split(seperator)
+    //Splits a string into an array based on the given separator.
+    let data = "HTML,CSS,JavaScript";
+    let parts = data.split(",");
+    console.log(parts); // ["HTML", "CSS", "JavaScript"]
+
+  
+    //charAt(ndex)
+    let lang = "JavaScript";
+    console.log(lang.charAt(0)); // "J"
+
+    //repeat(count)
+    let wow = "ha";
+    console.log(wow.repeat(3)); // "hahaha"
+
+    </script>
+</body>
+</html>
